@@ -1,0 +1,158 @@
+body{
+    font-family: roboto, bold;
+    margin: 0;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.nav-link{
+    animation-name: mover;
+    animation-duration: 1s;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    height: 60px;
+    background: linear-gradient(0deg, #D0EBFF 0%, #ff81cb 100%);
+    padding-right: 60px;
+    align-items: center;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: #D0EBFF;
+    animation-name: mover;
+    animation-duration: 1s;
+}
+
+.logo:hover{
+    color: #ff81cb;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 20px;
+}
+
+nav a{
+    
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+
+nav a:hover{
+    color: #D0EBFF;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: row;
+    }
+
+
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    .logo img{
+        width: 30%;
+        height: 30%;
+    }
+    
+    .nombre-empresa{
+        width: 20%;
+    }
+
+    .img{
+        width: 90%;
+        margin: 40px;
+    }
+    
+
+}
+
+
+body{
+    background-color: #FF81CB;
+}
+
+
+footer{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 60px;
+    background: linear-gradient(0deg, rgba(255,129,203,1) 0%, #D0EBFF 100%);
+    padding-right: 60px;
+    align-items: center;
+}
+
+main{
+    
+    display: flex;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(208,235,255,1) 0%, whitesmoke 50%, rgba(208,235,255,1) 100%);  
+}
+
+.grid{
+    flex-wrap: wrap;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin: 60px;
+    animation-name: mover;
+    animation-duration: 1s;
+    
+}
+
+
+
+.about{
+    border-radius:20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+.derechos{
+    animation-name: mover;
+    animation-duration: 1s;
+}
+
+@keyframes mover {
+    20%{
+        transform: translate(-5%, 0);
+    }
+   
+    80%{
+        transform: translate(1%, 0);
+    }
+
+}
+
+.grid :hover{
+    transform: scale(1.05);
+}
