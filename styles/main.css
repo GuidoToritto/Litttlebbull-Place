@@ -66,6 +66,10 @@ nav a:hover{
         width: 0%;
     }   
 
+    .go{
+        font-size: 14px;
+    }
+
 }
 
 
@@ -158,3 +162,19 @@ img{
     transform: scale(1.05);
 }
 
+
+@font-face{
+    font-family: roboto;
+    src: url('roboto.ttf') format('truetype');
+}
+
+.go{
+    justify-content: center;
+    display: flex;
+    color: white;
+
+    animation-name: mover;
+    animation-duration: 1s;
+
+
+}
